@@ -2,9 +2,13 @@
   <ul>
     {{#each todos}}
       <li class="{{#if checked}}checked{{/if}}">
-        <input type="checkbox" checked="{{checked}}" class="toggle-checked">
+        {{#if currentUser}}
+          <input type="checkbox" checked="{{checked}}" class="toggle-checked">
+        {{/if}}
         <span class="text">{{text}}</span>
-        <button class="delete-todo">&times;</button>
+        {{#if currentUser}}
+          <button class="delete-todo">&times;</button>
+        {{/if}}
       </li>
     {{/each}}
   </ul>

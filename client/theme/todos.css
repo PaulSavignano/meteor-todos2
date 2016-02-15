@@ -59,6 +59,12 @@ li.checked .text {
   position: relative;
 }
 
+.quantity {
+  width: 30px;
+}
+
+
+
 /* Customize container */
 @media (min-width: 768px) {
   .container {
